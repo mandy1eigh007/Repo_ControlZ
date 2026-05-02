@@ -8,6 +8,7 @@ Starter manual files were created and pushed in commit `50227e2`.
 - Manual update workflow is documented in `GUIDE.md`.
 - Stronger “Update guide/manual prompt” exists in `PROMPTS.md`.
 - Codespaces workflow is documented in `GUIDE.md`.
+- VS Code Chat custom instruction workflow is documented in `GUIDE.md`.
 
 Repo contents:
 - `README.md` exists
@@ -20,7 +21,7 @@ Repo contents:
 - Keep Repo ControlZ current as workflow questions come up.
 
 ## Next approved task
-- Add VS Code Chat custom instruction workflow.
+- Add Replit restart workflow.
 
 ## Verification
 - No build required (docs-only repo).

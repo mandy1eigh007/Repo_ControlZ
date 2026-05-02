@@ -78,6 +78,40 @@ Use this when you want a clean, repeatable dev environment in GitHub Codespaces.
    - Commit with a clear message.
    - Report changed files, validation commands run, `git status`, commit hash, and anything unverified.
 
+## VS Code Chat Custom Instruction Workflow
+Use VS Code Chat / GitHub Copilot Chat when you’re working inside a repo and want an agent to follow rules consistently.
+
+Repo-level custom instructions help the agent remember guardrails across prompts, but they **do not replace** the repo’s source-of-truth docs. Agents must still be told to read the source of truth before editing.
+
+Key file:
+- `.github/copilot-instructions.md`
+
+Starter template:
+- `templates/copilot-instructions.md`
+
+### Workflow
+1. Open the repo in VS Code or Codespaces.
+2. Add `.github/copilot-instructions.md` to the working repo.
+3. Copy the starter content from `templates/copilot-instructions.md`.
+4. Add or update `AGENTS.md` and `AI_PROJECT_CONTROL/` files if needed.
+5. Start every VS Code Chat task by telling it to read:
+   - `.github/copilot-instructions.md`
+   - `AGENTS.md`
+   - `AI_PROJECT_CONTROL/02_SOURCE_OF_TRUTH.md`
+   - `AI_PROJECT_CONTROL/03_CURRENT_STATE.md`
+6. Give it one task at a time.
+7. Require it to report changed files, build/test commands, git status, commit hash, and unverified items.
+8. Push after the commit.
+
+### Warning: drift still happens
+VS Code Chat can still lose context or drift.
+
+If it starts changing unrelated files:
+1. Stop it.
+2. Run `git status`.
+3. Run `git diff`.
+4. Bring the output back to ChatGPT (foreman) for review before continuing.
+
 ## How to Update This Manual
 Use this when you’re changing Repo ControlZ itself (the manual, prompts, and templates).
 

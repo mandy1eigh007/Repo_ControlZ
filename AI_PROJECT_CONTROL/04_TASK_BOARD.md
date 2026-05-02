@@ -4,10 +4,9 @@
 - (none)
 
 ## Next
-- [ ] Add VS Code Chat custom instruction workflow.
+- [ ] Add Replit restart workflow.
 
 ## Later
-- [ ] Add Replit restart workflow.
 - [ ] Add troubleshooting section.
 
 ## Done
@@ -15,6 +14,7 @@
 - [x] Add “How to Update This Manual” section to `GUIDE.md`
 - [x] Add a stronger “Update guide/manual prompt” to `PROMPTS.md`
 - [x] Add Codespaces workflow
+- [x] Add VS Code Chat custom instruction workflow
 
 ## Do Not Touch Yet
 - No website.
