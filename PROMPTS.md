@@ -82,7 +82,27 @@ Use this when the repo should learn from what just happened.
 
 **Prompt**
 
-- Update the manual docs to reflect the new workflow knowledge.
-- Keep it short, practical, and consistent.
-- Add a `CHANGELOG.md` entry describing the update.
-- Do not invent app code; this repo is documentation and templates.
+- You are updating **Repo ControlZ itself** (docs/prompts/templates). This repo is documentation-only.
+- Before making changes, read:
+  - `README.md`
+  - `GUIDE.md`
+  - `PROMPTS.md`
+  - `AI_PROJECT_CONTROL/02_SOURCE_OF_TRUTH.md`
+  - `AI_PROJECT_CONTROL/03_CURRENT_STATE.md`
+- Make the smallest Markdown-only change that captures the new workflow knowledge.
+- Hard rules:
+  - Do not add an app framework.
+  - Do not add `package.json`, build systems, or dependencies.
+  - Do not create a documentation website.
+  - Do not use icons.
+  - Do not change templates unless explicitly requested.
+- Bookkeeping (required for manual updates):
+  - Add a clear entry to `CHANGELOG.md`.
+  - Add a worklog entry to `AI_PROJECT_CONTROL/05_WORKLOG.md`.
+- Validation (docs-only repo):
+  - Run `git diff`.
+  - Run `find . -maxdepth 4 -type f -not -path './.git/*' | sort`.
+  - Run `git status`.
+- Commit and report:
+  - Commit with a clear message (usually `docs: ...`).
+  - Report files changed, validation commands run, `git status`, commit hash, and anything unverified.
