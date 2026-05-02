@@ -15,3 +15,17 @@
   - `git status`
 - **Build status:** Not applicable (docs-only repo)
 - **Commit:** 1a5b3bd67b3963ce9ce37feef01923c8f1f2ea0e
+
+## 2026-05-02 — Add “How to Update This Manual” section
+- **Agent/tool used:** Codex in GitHub Codespaces
+- **Task assigned:** Add a “How to Update This Manual” section to `GUIDE.md`
+- **Files modified:**
+  - `GUIDE.md`
+  - `CHANGELOG.md`
+  - `AI_PROJECT_CONTROL/05_WORKLOG.md`
+- **Validation commands:**
+  - `git diff`
+  - `find . -maxdepth 4 -type f -not -path './.git/*' | sort`
+  - `git status`
+- **Build status:** Not applicable (docs-only repo)
+- **Commit:** (this commit)

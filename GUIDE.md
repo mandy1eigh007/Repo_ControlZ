@@ -58,6 +58,30 @@ Use this for stubborn bugs and messy failures.
 5. Verify with the closest possible test/build.
 6. Write a short worklog entry: symptom → cause → fix → verification.
 
+## How to Update This Manual
+Use this when you’re changing Repo ControlZ itself (the manual, prompts, and templates).
+
+1. Read the source of truth first:
+   - `README.md`
+   - `GUIDE.md`
+   - `PROMPTS.md`
+   - `AI_PROJECT_CONTROL/02_SOURCE_OF_TRUTH.md`
+   - `AI_PROJECT_CONTROL/03_CURRENT_STATE.md`
+2. Keep scope tight:
+   - One task at a time.
+   - Small, Markdown-only changes unless explicitly told otherwise.
+   - Don’t add frameworks, `package.json`, dependencies, or a documentation site.
+3. Make the change.
+4. Bookkeeping (required for manual updates):
+   - Update `CHANGELOG.md`.
+   - Add an entry to `AI_PROJECT_CONTROL/05_WORKLOG.md`.
+5. Validate:
+   - For this docs-only repo, run `find . -maxdepth 4 -type f -not -path './.git/*' | sort` and `git status`.
+   - If you ran anything else (lint/tests/build), include it in the report.
+6. Commit and report:
+   - Use a clear commit message (`docs: ...`).
+   - Report files changed, validation commands run, `git status`, commit hash, and anything unverified.
+
 ## Commit Rules
 - Keep commits small and single-purpose.
 - Prefer descriptive messages (e.g., `docs: ...`, `fix: ...`, `chore: ...`).
