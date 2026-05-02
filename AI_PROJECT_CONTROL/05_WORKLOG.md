@@ -1,0 +1,17 @@
+# Repo ControlZ — Worklog
+
+## 2026-05-02 — Add live repo control files
+- **Agent/tool used:** Codex in GitHub Codespaces
+- **Task assigned:** Add live repo-control files for Repo ControlZ itself
+- **Files created:**
+  - `AGENTS.md`
+  - `AI_PROJECT_CONTROL/01_PROJECT_BRIEF.md`
+  - `AI_PROJECT_CONTROL/02_SOURCE_OF_TRUTH.md`
+  - `AI_PROJECT_CONTROL/03_CURRENT_STATE.md`
+  - `AI_PROJECT_CONTROL/04_TASK_BOARD.md`
+  - `AI_PROJECT_CONTROL/05_WORKLOG.md`
+- **Validation commands:**
+  - `find . -maxdepth 4 -type f -not -path './.git/*' | sort`
+  - `git status`
+- **Build status:** Not applicable (docs-only repo)
+- **Commit:** 2f3fa64
