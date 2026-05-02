@@ -4,6 +4,12 @@
 Starter manual files were created and pushed in commit `50227e2`.
 
 ## Current state
+- Live repo control files are in place (`AGENTS.md`, `AI_PROJECT_CONTROL/`).
+- Manual update workflow is documented in `GUIDE.md`.
+- Stronger “Update guide/manual prompt” exists in `PROMPTS.md`.
+- Codespaces workflow is documented in `GUIDE.md`.
+
+Repo contents:
 - `README.md` exists
 - `GUIDE.md` exists
 - `PROMPTS.md` exists
@@ -11,10 +17,10 @@ Starter manual files were created and pushed in commit `50227e2`.
 - `templates/` exists
 
 ## Current goal
-- Add live control files for Repo ControlZ.
+- Keep Repo ControlZ current as workflow questions come up.
 
 ## Next approved task
-- After this commit, review whether `GUIDE.md` needs a dedicated “How to Update This Manual” section.
+- Add VS Code Chat custom instruction workflow.
 
 ## Verification
 - No build required (docs-only repo).

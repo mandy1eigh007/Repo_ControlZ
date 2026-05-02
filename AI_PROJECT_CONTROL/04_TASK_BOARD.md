@@ -1,17 +1,20 @@
 # Repo ControlZ — Task Board
 
 ## Now
-- [ ] Add live repo control files.
+- (none)
 
 ## Next
-- [ ] Add “How to Update This Manual” section to `GUIDE.md`.
-- [ ] Add a stronger “Update guide/manual prompt” to `PROMPTS.md`.
+- [ ] Add VS Code Chat custom instruction workflow.
 
 ## Later
-- [ ] Add Codespaces workflow.
-- [ ] Add VS Code Chat custom instruction workflow.
 - [ ] Add Replit restart workflow.
 - [ ] Add troubleshooting section.
+
+## Done
+- [x] Add live repo control files
+- [x] Add “How to Update This Manual” section to `GUIDE.md`
+- [x] Add a stronger “Update guide/manual prompt” to `PROMPTS.md`
+- [x] Add Codespaces workflow
 
 ## Do Not Touch Yet
 - No website.

@@ -57,3 +57,18 @@
   - `git status`
 - **Build status:** Not applicable (docs-only repo)
 - **Commit:** (this commit)
+
+## 2026-05-02 — Clean up task board state
+- **Agent/tool used:** Codex in GitHub Codespaces
+- **Task assigned:** Clean up `AI_PROJECT_CONTROL/04_TASK_BOARD.md` and update state docs to reflect completed work
+- **Files modified:**
+  - `AI_PROJECT_CONTROL/04_TASK_BOARD.md`
+  - `AI_PROJECT_CONTROL/03_CURRENT_STATE.md`
+  - `CHANGELOG.md`
+  - `AI_PROJECT_CONTROL/05_WORKLOG.md`
+- **Validation commands:**
+  - `git diff`
+  - `find . -maxdepth 4 -type f -not -path './.git/*' | sort`
+  - `git status`
+- **Build status:** Not applicable (docs-only repo)
+- **Commit:** (this commit)

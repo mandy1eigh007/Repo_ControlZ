@@ -16,3 +16,6 @@ All notable changes to this manual are documented here.
 
 ## 2026-05-02
 - docs: add Codespaces workflow
+
+## 2026-05-02
+- docs: clean up task board and current state
