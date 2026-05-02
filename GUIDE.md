@@ -150,6 +150,66 @@ If Replit gets weird, stops responding, breaks the app, or changes too much:
 - Do not restyle the app unless styling is the task.
 - Do not overwrite source-of-truth docs.
 
+## Guardrails
+Use these guardrails to keep AI agents safe, scoped, and predictable.
+
+### Scope Guardrails
+- One task at a time.
+- No broad “make it better” tasks.
+- No drive-by fixes.
+- No unrelated refactors.
+- If the task grows, stop and split it into smaller tasks.
+
+### Repo Guardrails
+- GitHub is the source of truth.
+- Check branch and repo before work.
+- Do not change repo structure without approval.
+- Do not overwrite source-of-truth files.
+- Do not delete control files.
+- Keep `AGENTS.md` and `AI_PROJECT_CONTROL` files intact.
+
+### Code Guardrails
+- Do not change architecture unless assigned.
+- Do not rename files/folders unless assigned.
+- Do not add dependencies unless approved.
+- Do not restyle unless styling is the task.
+- Do not remove working features.
+- Make the smallest safe change.
+
+### Documentation Guardrails
+- Markdown is the source of truth.
+- ZIP, PDF, DOCX, and image files are exports or artifacts, not the master copy.
+- Every manual update requires `CHANGELOG.md` and `AI_PROJECT_CONTROL/05_WORKLOG.md` updates.
+- Keep wording direct and practical.
+
+### Agent Reporting Guardrails
+Every agent report should include:
+- Files changed
+- What changed
+- Tests/build/validation commands run
+- Git status
+- Commit hash or reason no commit was made
+- Anything unverified
+
+### Stop-Work Guardrails
+Stop the agent and bring the situation back to ChatGPT if:
+- The agent changes unrelated files.
+- The agent wants to redesign or restructure without approval.
+- The agent adds dependencies without approval.
+- The agent cannot explain the root cause.
+- The build fails and the fix is unclear.
+- The wrong repo or branch is active.
+- There are uncommitted changes that are not understood.
+- The agent starts looping or guessing.
+
+### Minimum Evidence to Collect Before Asking for Help
+- `git status`
+- `git diff`
+- `git log --oneline -5`
+- Full error output
+- Agent report
+- Screenshot if the issue is visual
+
 ## Troubleshooting
 Use this when AI coding workflows go sideways: drift, missed commits, tool disconnects, broken builds, or lost context.
 

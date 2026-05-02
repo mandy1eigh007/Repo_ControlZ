@@ -11,6 +11,7 @@ Starter manual files were created and pushed in commit `50227e2`.
 - VS Code Chat custom instruction workflow is documented in `GUIDE.md`.
 - Replit restart workflow is documented in `GUIDE.md`.
 - Troubleshooting section is documented in `GUIDE.md`.
+- Guardrails section is documented in `GUIDE.md`.
 
 Repo contents:
 - `README.md` exists

@@ -17,6 +17,7 @@
 - [x] Add VS Code Chat custom instruction workflow
 - [x] Add Replit restart workflow
 - [x] Add troubleshooting section
+- [x] Add Guardrails section
 
 ## Do Not Touch Yet
 - No website.
