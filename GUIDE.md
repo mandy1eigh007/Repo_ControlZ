@@ -112,6 +112,44 @@ If it starts changing unrelated files:
 3. Run `git diff`.
 4. Bring the output back to ChatGPT (foreman) for review before continuing.
 
+## Replit Restart Workflow
+Use this when returning to a Replit project after a gap, when the agent lost context, or when the app is half-built.
+
+GitHub should remain the source of truth. Treat Replit as a build/work environment, not the permanent memory.
+
+Before asking the Replit agent to build anything, confirm the repo state. Do not let Replit redesign, rename, restructure, or add dependencies unless that is the assigned task.
+
+### Workflow
+1. Open the Replit project.
+2. Confirm it is connected to the correct GitHub repo.
+3. Pull latest changes from GitHub if available.
+4. Check what files exist.
+5. Check current errors or broken behavior.
+6. Bring the current state back to ChatGPT for foreman review.
+7. Ask ChatGPT for one scoped Replit agent prompt.
+8. Paste the prompt into Replit.
+9. Review the agent report.
+10. Commit and push changes back to GitHub.
+11. Bring the final report back to ChatGPT.
+
+### Emergency recovery
+If Replit gets weird, stops responding, breaks the app, or changes too much:
+- Stop the agent.
+- Do not keep prompting randomly.
+- Check Git status/version control panel.
+- Identify changed files.
+- Copy the error/output/report.
+- Bring it back to ChatGPT before accepting more changes.
+- If needed, revert unwanted changes before continuing.
+
+### Do Not Let Replit Do This
+- Do not rebuild the whole app.
+- Do not change architecture without approval.
+- Do not rename files or folders without approval.
+- Do not add dependencies without approval.
+- Do not restyle the app unless styling is the task.
+- Do not overwrite source-of-truth docs.
+
 ## How to Update This Manual
 Use this when you’re changing Repo ControlZ itself (the manual, prompts, and templates).
 

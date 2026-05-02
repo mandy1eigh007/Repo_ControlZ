@@ -4,10 +4,10 @@
 - (none)
 
 ## Next
-- [ ] Add Replit restart workflow.
+- [ ] Add troubleshooting section.
 
 ## Later
-- [ ] Add troubleshooting section.
+- (none)
 
 ## Done
 - [x] Add live repo control files
@@ -15,6 +15,7 @@
 - [x] Add a stronger “Update guide/manual prompt” to `PROMPTS.md`
 - [x] Add Codespaces workflow
 - [x] Add VS Code Chat custom instruction workflow
+- [x] Add Replit restart workflow
 
 ## Do Not Touch Yet
 - No website.
