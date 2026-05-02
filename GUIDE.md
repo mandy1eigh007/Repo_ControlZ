@@ -150,6 +150,69 @@ If Replit gets weird, stops responding, breaks the app, or changes too much:
 - Do not restyle the app unless styling is the task.
 - Do not overwrite source-of-truth docs.
 
+## Troubleshooting
+Use this when AI coding workflows go sideways: drift, missed commits, tool disconnects, broken builds, or lost context.
+
+### 1. Agent changed too much
+- Stop the agent.
+- Run `git status`.
+- Run `git diff`.
+- Identify changed files.
+- Bring the diff/status back to ChatGPT for review.
+- Do not keep prompting the same agent until scope is understood.
+
+### 2. Agent forgot to commit
+- Run `git status`.
+- If changes are correct, commit them.
+- If unsure, bring changed files/status back to ChatGPT.
+- Push only after the commit is confirmed.
+
+### 3. Local VS Code disconnected or crashed
+- Reopen the repo or switch to Codespaces.
+- Run `git status`.
+- Run `git log --oneline -5`.
+- Check for uncommitted files.
+- Do not restart the task until the repo state is understood.
+
+### 4. Wrong branch or wrong repo
+- Run `git branch --show-current`.
+- Run `git remote -v`.
+- Confirm the repo name and branch before continuing.
+- Stop if the repo/branch is wrong.
+
+### 5. Build is broken
+- Copy the full error output.
+- Do not ask for a broad rebuild.
+- Ask ChatGPT for a scoped error-fix prompt.
+- Require the agent to explain root cause and changed files.
+
+### 6. Deployed app is blank or broken
+- Confirm whether the page shell loads.
+- Check browser console errors.
+- Check routing/base path.
+- Check app mount point.
+- Check missing assets/data.
+- Make the smallest safe fix.
+
+### 7. Agent wants to redesign/restructure
+- Stop.
+- Reconfirm source-of-truth files.
+- Only allow redesign/restructure if the task explicitly says so.
+
+### 8. Lost context / returning after a gap
+- Read `AI_PROJECT_CONTROL/03_CURRENT_STATE.md`.
+- Read `AI_PROJECT_CONTROL/04_TASK_BOARD.md`.
+- Read latest `AI_PROJECT_CONTROL/05_WORKLOG.md`.
+- Ask ChatGPT for the next scoped prompt.
+
+### When in doubt
+Stop and collect:
+- `git status`
+- `git diff`
+- `git log --oneline -5`
+- error output
+- agent report
+
 ## How to Update This Manual
 Use this when you’re changing Repo ControlZ itself (the manual, prompts, and templates).
 

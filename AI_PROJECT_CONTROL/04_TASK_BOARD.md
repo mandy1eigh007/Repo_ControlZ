@@ -1,10 +1,10 @@
 # Repo ControlZ — Task Board
 
 ## Now
-- (none)
+- Maintain Repo ControlZ as needed.
 
 ## Next
-- [ ] Add troubleshooting section.
+- Add new workflow sections only when a real question/problem comes up.
 
 ## Later
 - (none)
@@ -16,6 +16,7 @@
 - [x] Add Codespaces workflow
 - [x] Add VS Code Chat custom instruction workflow
 - [x] Add Replit restart workflow
+- [x] Add troubleshooting section
 
 ## Do Not Touch Yet
 - No website.
