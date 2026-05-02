@@ -43,3 +43,17 @@
   - `git status`
 - **Build status:** Not applicable (docs-only repo)
 - **Commit:** (this commit)
+
+## 2026-05-02 — Add Codespaces workflow
+- **Agent/tool used:** Codex in GitHub Codespaces
+- **Task assigned:** Add Codespaces workflow
+- **Files modified:**
+  - `GUIDE.md`
+  - `CHANGELOG.md`
+  - `AI_PROJECT_CONTROL/05_WORKLOG.md`
+- **Validation commands:**
+  - `git diff`
+  - `find . -maxdepth 4 -type f -not -path './.git/*' | sort`
+  - `git status`
+- **Build status:** Not applicable (docs-only repo)
+- **Commit:** (this commit)

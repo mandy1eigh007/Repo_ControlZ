@@ -58,6 +58,26 @@ Use this for stubborn bugs and messy failures.
 5. Verify with the closest possible test/build.
 6. Write a short worklog entry: symptom → cause → fix → verification.
 
+## Codespaces Workflow
+Use this when you want a clean, repeatable dev environment in GitHub Codespaces.
+
+1. Start Codespaces
+   - Open the repo on GitHub.
+   - Create or open a Codespace for the branch you intend to work on.
+2. Sync and orient
+   - Confirm the branch (`git status`).
+   - Read the repo’s source of truth before changing anything.
+   - Identify the smallest next task.
+3. Do the work
+   - Make the smallest correct change.
+   - Keep scope to one task; avoid unrelated refactors.
+4. Validate and capture evidence
+   - Run the closest available tests/build if they exist.
+   - If this is a docs-only repo, validate with `git diff` + file listing + `git status`.
+5. Commit and report
+   - Commit with a clear message.
+   - Report changed files, validation commands run, `git status`, commit hash, and anything unverified.
+
 ## How to Update This Manual
 Use this when you’re changing Repo ControlZ itself (the manual, prompts, and templates).
 
